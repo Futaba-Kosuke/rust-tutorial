@@ -1,0 +1,12 @@
+services:
+  tutorial:
+    container_name: rust-tutorial
+    build: .
+    volumes:
+      - .:/rust/tutorial
+    # command: cargo run
+    tty: true
+    environment:
+      - TZ=Asia/Tokyo
+    ports:
+      - 8080:8080

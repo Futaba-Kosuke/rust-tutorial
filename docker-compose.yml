@@ -4,7 +4,7 @@ services:
     build: .
     volumes:
       - .:/rust/tutorial
-    # command: cargo run
+    command: cargo run
     tty: true
     environment:
       - TZ=Asia/Tokyo

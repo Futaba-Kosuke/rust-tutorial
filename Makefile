@@ -8,4 +8,7 @@ down:
 	docker-compose down
 
 shell:
-	docker exec -it rust-tutorial /bin/sh
+	docker-compose run tutorial /bin/sh
+
+access:
+	docker-compose exec -it tutorial /bin/sh
